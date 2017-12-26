@@ -20,60 +20,60 @@ class DuckHunting:
     ducks = 3 # 클래스 변수
     def __init__(self, power):
         self.power = power
-        print "Dog's power is %d" % self.power
+        print ("Dog's power is %d" % self.power)
 
     def hunting(self):
-        print "Catch!"
+        print ("Catch!")
         self.ducks -= 1
         if self.ducks < 0:
             self.ducks = 0
 
     def checkDucks(self):
          if self.ducks <= 0:
-             print "Good Dog!"
+             print ("Good Dog!")
          else:
-             print str(self.ducks) + " Ducks left"
+             print (str(self.ducks) + " Ducks left")
 
 dog1 = DuckHunting(1)
 dog1.hunting()
 dog1.checkDucks()
-print DuckHunting.ducks
+print (DuckHunting.ducks)
 
 dog2 = DuckHunting(15)
 dog2.checkDucks()
 
 import sys
-print sys.version
+print (sys.version)
 
 # 상속(Inheritance)
-print ''
-print '='*5 + '상속(Inheritance)'
+print ('')
+print ('='*5 + '상속(Inheritance)')
 class Parent():
     def print_last_name(self):
-        print "KingKong"
+        print ("KingKong")
 
 class Child(Parent):
     def print_first_name(self):
-        print "Amy"
+        print ("Amy")
 
     # overriding
     def print_last_name(self):
-        print "Monkey"
+        print ("Monkey")
 
 amy = Child()
 amy.print_first_name()
 amy.print_last_name()
 
 # 다중상속(Multiple Inheritance)
-print ''
-print '='*5 + '다중상속(Multiple Inheritance)'
+print ('')
+print ('='*5 + '다중상속(Multiple Inheritance)')
 class Amy():
     def print_last_name(self):
-        print "Monkey"
+        print ("Monkey")
 
 class Lex():
     def print_first_name(self):
-        print "Lex"
+        print ("Lex")
 
 class AmyLex(Amy, Lex):
     pass
@@ -83,8 +83,8 @@ amyLex.print_first_name()
 amyLex.print_last_name()
 
 # __add__, __sub__(+,- 연산자)
-print ''
-print '='*5 + '+,- 연산자'
+print ('')
+print ('='*5 + '+,- 연산자')
 class HousePark:
     lastname = "박"
     def __init__(self, name):
