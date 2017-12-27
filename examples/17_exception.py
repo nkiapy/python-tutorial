@@ -37,8 +37,8 @@ except ZeroDivisionError as e:
 
 
 # 여러개의 오류처리하기
-print ''
-print '='*5 + '여러개의 오류처리하기'
+print ('')
+print ('='*5 + '여러개의 오류처리하기')
 
 try:
     a = [1,2]
@@ -60,8 +60,8 @@ except (ZeroDivisionError, IndexError) as e:
 
 # try .. else
 # else절은 예외가 발생하지 않은 경우에 실행되며 반드시 except절 바로 다음에 위치
-print ''
-print '='*5 + 'try .. else'
+print ('')
+print ('='*5 + 'try .. else')
 
 try:
     f = open('foo.txt', 'r')
@@ -74,17 +74,17 @@ else:
 
 # try .. finally
 # finally절은 try문 수행 도중 예외 발생 여부에 상관없이 항상 수행된다.
-print ''
-print '='*5 + 'try .. finally'
+print ('')
+print ('='*5 + 'try .. finally')
 
 try:
     a = 1
     _f = open('foo1.txt', 'r')
 except IOError as e:
-    print e
+    print (e)
 finally:
     #_f.close()
-    print 'finally'
+    print ('finally')
 
 
 # 오류 회피하기 (pass)
@@ -105,8 +105,8 @@ class Bird:
 
 
 # 오류 만들기
-print ''
-print '='*5 + '오류 만들기'
+print ('')
+print ('='*5 + '오류 만들기')
 class MyError(Exception):
     def __init__(self, msg):
         self.msg = msg

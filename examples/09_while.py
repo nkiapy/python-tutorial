@@ -1,25 +1,25 @@
 # coding=UTF-8
 
 # 기본
-print '='*5 + '기본'
+print ('='*5 + '기본')
 i = 0
 while i <= 10:
     print(i),
     i += 1
-print ''
+print ('')
 
 # break
-print '='*5 + 'break'
+print ('='*5 + 'break')
 j = 0
 while j <= 10:
     if j == 9:
         break
     print(j)
     j += 1
-print ''
+print ('')
 
 # continue
-print '='*5 + 'continue'
+print ('='*5 + 'continue')
 k = 0
 while k <= 10:
     k += 1

@@ -1,2 +1,5 @@
 .DS_Store
 .idea
+examples/modules/__pycache__
+examples/*.txt
+examples/*.jpg

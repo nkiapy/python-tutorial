@@ -15,15 +15,15 @@ a = modules.mod2.Math()
 print(a.solv(2))
 
 # random, urllib 사용
-print ''
-print '='*5 + 'random, urllib 사용'
+print ('')
+print ('='*5 + 'random, urllib 사용')
 import random
-import urllib
+import urllib.request
 
 def download_web_image(url):
     name = random.randrange(1, 1000)
     full_file_name = str(name) + ".jpg"
-    urllib.urlretrieve(url, full_file_name)
+    urllib.request.urlretrieve(url, full_file_name)
 
 download_web_image("http://img.naver.net/static/www/u/2013/0731/nmms_224940510.gif")
 
